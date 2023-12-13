@@ -70,11 +70,7 @@
                 imageUrl: '問題/10.jpg', 
                 correctAnswer: 2  
             },
-			{ 
-                imageUrl: '問題/11.jpg', 
-                correctAnswer: 4  
-            },
-            
+		
         ];
         var currentImageIndex = 0;
         var displayedImage = document.getElementById('displayedImage');
@@ -95,7 +91,7 @@
             }
 
             if (currentImageIndex === imageQuestions.length - 1) { 
-                alert("天啊!你這智商居然還有答對: " + correctAnswersCount + "題");
+                alert("天啊!你這智商居然還有得到: " + (100/10*correctAnswersCount) + "分");
                 return;
             }
 
